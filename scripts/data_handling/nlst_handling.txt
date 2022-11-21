@@ -1,0 +1,26 @@
+Convert dcm files to jpg:
+	https://superuser.com/questions/1497345/how-to-use-dcmcjpeg-to-convert-dicom-to-jpeg
+
+	https://manpages.ubuntu.com/manpages/trusty/man1/dcmj2pnm.1.html
+
+Move files from subfolders to parent folder:
+	https://unix.stackexchange.com/questions/182437/how-to-move-all-files-inside-present-subfolders-up-here
+	
+	https://superuser.com/questions/658075/how-do-i-move-files-out-of-nested-subdirectories-into-another-folder-in-ubuntu
+
+	find ~/research_project/manifest-NLST_allCT/NLST/ -type f -exec mv --backup=numbered -t ~/research_project/NLST_handled {} +
+	
+
+
+
+Current TODO:
+email Richard, cc brian and Shun asking for access to Rail lab to use a machine to host my data set.
+
+Set up machine
+Start transferring NLST to machine
+Move all dicom files to parent folder
+Check all sota SSL methods to see what size image they take in (currently assuming 512x512)
+
+
+Plan:
+Streaming dataset off of head node

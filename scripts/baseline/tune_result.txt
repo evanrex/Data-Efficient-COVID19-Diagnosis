@@ -1,0 +1,51 @@
+/home-mscluster/erex/research_project/baseline
+Mon Sep 26 12:28:04 SAST 2022
+PyTorch Version:  1.12.1
+Torchvision Version:  0.13.1
+Let's use 2 GPUs!
+Params to learn:
+	 module.fc.weight
+	 module.fc.bias
+Starting training...
+Epoch 0/14
+----------
+train Loss: 0.1891 Acc: 0.9332
+validation Loss: 0.4726 Acc: 0.7676
+
+Epoch 1/14
+----------
+train Loss: 0.1374 Acc: 0.9537
+validation Loss: 0.4579 Acc: 0.7823
+
+Epoch 2/14
+----------
+train Loss: 0.1256 Acc: 0.9571
+validation Loss: 0.5148 Acc: 0.7621
+
+Epoch 3/14
+----------
+train Loss: 0.1185 Acc: 0.9596
+validation Loss: 0.5238 Acc: 0.7593
+
+Epoch 4/14
+----------
+train Loss: 0.1143 Acc: 0.9603
+validation Loss: 0.5366 Acc: 0.7622
+
+Epoch 5/14
+----------
+train Loss: 0.1100 Acc: 0.9618
+validation Loss: 0.4898 Acc: 0.7789
+
+Epoch 6/14
+----------
+train Loss: 0.1082 Acc: 0.9625
+validation Loss: 0.4896 Acc: 0.7801
+
+Epoch 7/14
+----------
+train Loss: 0.1055 Acc: 0.9632
+validation Loss: 0.4636 Acc: 0.7926
+
+Epoch 8/14
+----------

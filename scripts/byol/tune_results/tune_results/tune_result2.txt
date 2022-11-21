@@ -1,0 +1,83 @@
+PyTorch Version:  1.12.1
+Torchvision Version:  0.13.1
+Params to learn:
+	 fc.weight
+	 fc.bias
+Starting training...
+Epoch 0/14
+----------
+train Loss: 0.4153 Acc: 0.8425
+validation Loss: 1.3326 Acc: 0.3064
+
+Epoch 1/14
+----------
+train Loss: 0.3832 Acc: 0.8476
+validation Loss: 1.2636 Acc: 0.3400
+
+Epoch 2/14
+----------
+train Loss: 0.3657 Acc: 0.8509
+validation Loss: 1.3263 Acc: 0.3086
+
+Epoch 3/14
+----------
+train Loss: 0.3547 Acc: 0.8531
+validation Loss: 1.5116 Acc: 0.3030
+
+Epoch 4/14
+----------
+train Loss: 0.3477 Acc: 0.8546
+validation Loss: 1.0547 Acc: 0.4183
+
+Epoch 5/14
+----------
+train Loss: 0.3420 Acc: 0.8559
+validation Loss: 0.9532 Acc: 0.4426
+
+Epoch 6/14
+----------
+train Loss: 0.3389 Acc: 0.8573
+validation Loss: 1.2523 Acc: 0.3713
+
+Epoch 7/14
+----------
+train Loss: 0.3355 Acc: 0.8584
+validation Loss: 1.1079 Acc: 0.4142
+
+Epoch 8/14
+----------
+train Loss: 0.3336 Acc: 0.8588
+validation Loss: 1.4121 Acc: 0.3602
+
+Epoch 9/14
+----------
+train Loss: 0.3297 Acc: 0.8599
+validation Loss: 1.0195 Acc: 0.4534
+
+Epoch 10/14
+----------
+train Loss: 0.3290 Acc: 0.8603
+validation Loss: 1.2555 Acc: 0.3765
+
+Epoch 11/14
+----------
+train Loss: 0.3271 Acc: 0.8609
+validation Loss: 1.2090 Acc: 0.3942
+
+Epoch 12/14
+----------
+train Loss: 0.3261 Acc: 0.8612
+validation Loss: 1.1555 Acc: 0.4328
+
+Epoch 13/14
+----------
+train Loss: 0.3244 Acc: 0.8620
+validation Loss: 1.1560 Acc: 0.4514
+
+Epoch 14/14
+----------
+train Loss: 0.3235 Acc: 0.8623
+validation Loss: 1.1298 Acc: 0.4373
+
+Training complete in 4877m 32s
+Best val Acc: 0.453373
