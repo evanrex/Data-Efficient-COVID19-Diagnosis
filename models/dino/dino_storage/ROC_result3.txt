@@ -1,0 +1,9 @@
+PyTorch Version:  1.12.1
+Torchvision Version:  0.13.1
+Baseline Pretrained weights found at /home-mscluster/erex/research_project/baseline/baseline_chkpt/model.pt and loaded with msg: <All keys matched successfully>
+ DINO Pretrained weights found at /home-mscluster/erex/research_project/dino/saving_dir3/dino_model.pt and loaded with msg: <All keys matched successfully>
+Loaded model!
+Loaded data!
+Let's use 2 GPUs!
+Starting Evaluation ...
+Done!

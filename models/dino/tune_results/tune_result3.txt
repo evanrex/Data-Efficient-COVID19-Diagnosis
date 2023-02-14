@@ -1,0 +1,86 @@
+PyTorch Version:  1.12.1
+Torchvision Version:  0.13.1
+Pretrained weights found at /home-mscluster/erex/research_project/dino/saving_dir3/checkpoint.pth and loaded with msg: _IncompatibleKeys(missing_keys=[], unexpected_keys=['head.mlp.0.weight', 'head.mlp.0.bias', 'head.mlp.2.weight', 'head.mlp.2.bias', 'head.mlp.4.weight', 'head.mlp.4.bias', 'head.last_layer.weight_g', 'head.last_layer.weight_v'])
+Loaded model!
+Loaded data!
+Params to learn:
+	 fc.weight
+	 fc.bias
+Starting training...
+Epoch 0/14
+----------
+train Loss: 0.2249 Acc: 0.9211
+validation Loss: 0.7917 Acc: 0.6866
+
+Epoch 1/14
+----------
+train Loss: 0.1778 Acc: 0.9389
+validation Loss: 0.7852 Acc: 0.6845
+
+Epoch 2/14
+----------
+train Loss: 0.1636 Acc: 0.9440
+validation Loss: 0.3975 Acc: 0.8289
+
+Epoch 3/14
+----------
+train Loss: 0.1555 Acc: 0.9471
+validation Loss: 0.3530 Acc: 0.8475
+
+Epoch 4/14
+----------
+train Loss: 0.1471 Acc: 0.9501
+validation Loss: 0.3697 Acc: 0.8466
+
+Epoch 5/14
+----------
+train Loss: 0.1439 Acc: 0.9510
+validation Loss: 0.3536 Acc: 0.8484
+
+Epoch 6/14
+----------
+train Loss: 0.1409 Acc: 0.9520
+validation Loss: 0.7850 Acc: 0.7084
+
+Epoch 7/14
+----------
+train Loss: 0.1378 Acc: 0.9530
+validation Loss: 0.5177 Acc: 0.7922
+
+Epoch 8/14
+----------
+train Loss: 0.1343 Acc: 0.9540
+validation Loss: 0.4416 Acc: 0.8187
+
+Epoch 9/14
+----------
+train Loss: 0.1307 Acc: 0.9555
+validation Loss: 0.4498 Acc: 0.8149
+
+Epoch 10/14
+----------
+train Loss: 0.1289 Acc: 0.9559
+validation Loss: 0.6582 Acc: 0.7437
+
+Epoch 11/14
+----------
+train Loss: 0.1274 Acc: 0.9563
+validation Loss: 0.7888 Acc: 0.7065
+
+Epoch 12/14
+----------
+train Loss: 0.1251 Acc: 0.9571
+validation Loss: 0.4583 Acc: 0.8115
+
+Epoch 13/14
+----------
+train Loss: 0.1247 Acc: 0.9569
+validation Loss: 0.3343 Acc: 0.8603
+
+Epoch 14/14
+----------
+train Loss: 0.1247 Acc: 0.9574
+validation Loss: 0.3519 Acc: 0.8554
+
+Training complete in 4775m 27s
+Best val Acc: 0.860252

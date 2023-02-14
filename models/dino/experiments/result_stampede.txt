@@ -1,0 +1,124 @@
+Starting... loading imports
+2023-01-27 21:14:08
+2023-01-27 21:14:11 Loaded imports!
+Using cache found in /home-mscluster/erex/.cache/torch/hub/facebookresearch_xcit_main
+| distributed init (rank 0): env://
+git:
+  sha: cb711401860da580817918b9167ed73e3eef3dcf, status: has uncommited changes, branch: main
+
+arch: resnet50
+batch_size_per_gpu: 64
+clip_grad: 3.0
+data_path: /home-mscluster/erex/research_project/datasets/NLST_dataset
+dist_url: env://
+drop_path_rate: 0.1
+epochs: 10
+freeze_last_layer: 1
+global_crops_scale: [0.14, 1.0]
+gpu: 0
+local_crops_number: 8
+local_crops_scale: [0.05, 0.14]
+local_rank: 0
+lr: 0.03
+min_lr: 1e-06
+momentum_teacher: 0.996
+norm_last_layer: True
+num_workers: 10
+optimizer: sgd
+out_dim: 65536
+output_dir: /home-mscluster/erex/research_project/models/dino/experiments/saving_dir
+patch_size: 16
+rank: 0
+saveckp_freq: 20
+seed: 0
+teacher_temp: 0.04
+use_bn_in_head: False
+use_fp16: True
+warmup_epochs: 10
+warmup_teacher_temp: 0.04
+warmup_teacher_temp_epochs: 0
+weight_decay: 0.0001
+weight_decay_end: 0.0001
+world_size: 1
+2023-01-27 21:14:21 Preparing data ...
+/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torchvision/transforms/transforms.py:891: UserWarning: Argument 'interpolation' of type int is deprecated since 0.13 and will be removed in 0.15. Please use InterpolationMode enum.
+  warnings.warn(
+2023-01-27 21:34:07 Dataset ready!
+2023-01-27 21:34:07 Dataloader ready
+2023-01-27 21:34:07 Data loaded : there are 9978500 images.
+Using cache found in /home-mscluster/erex/.cache/torch/hub/facebookresearch_xcit_main
+Student and Teacher are built: they are both resnet50 network.
+Loss, optimizer and schedulers ready.
+Starting DINO training !
+Traceback (most recent call last):
+  File "/home-mscluster/erex/research_project/models/dino/main_dino.py", line 486, in <module>
+    train_dino(args)
+  File "/home-mscluster/erex/research_project/models/dino/main_dino.py", line 288, in train_dino
+    train_stats = train_one_epoch(student, teacher, teacher_without_ddp, dino_loss,
+  File "/home-mscluster/erex/research_project/models/dino/main_dino.py", line 334, in train_one_epoch
+    student_output = student(images)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 969, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home-mscluster/erex/research_project/models/dino/utils.py", line 620, in forward
+    _out = self.backbone(torch.cat(x[start_idx: end_idx]))
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 285, in forward
+    return self._forward_impl(x)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 275, in _forward_impl
+    x = self.layer3(x)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 155, in forward
+    out = self.bn3(out)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/modules/batchnorm.py", line 736, in forward
+    return F.batch_norm(
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/nn/functional.py", line 2438, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 50.00 MiB (GPU 0; 5.93 GiB total capacity; 5.15 GiB already allocated; 50.44 MiB free; 5.24 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 2347) of binary: /home-mscluster/erex/anaconda3/bin/python3
+Traceback (most recent call last):
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/distributed/run.py", line 765, in <module>
+    main()
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 345, in wrapper
+    return f(*args, **kwargs)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/distributed/run.py", line 761, in main
+    run(args)
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/distributed/run.py", line 752, in run
+    elastic_launch(
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 245, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_dino.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-01-27_21:34:39
+  host      : mscluster22.ms.wits.ac.za
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2347)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

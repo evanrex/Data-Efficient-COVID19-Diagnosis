@@ -1,0 +1,22 @@
+/home-mscluster/erex/anaconda3/envs/swav/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libtorch_cuda_cu.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+/home-mscluster/erex/anaconda3/envs/swav/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home-mscluster/erex/anaconda3/envs/swav/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+============ Initializing Model ... ============
+============ preparing data ... ============
+Traceback (most recent call last):
+  File "/home-mscluster/erex/research_project/byol/main.py", line 107, in <module>
+    main()
+  File "/home-mscluster/erex/research_project/byol/main.py", line 55, in main
+    sampler = torch.utils.data.DistributedSampler(dataset, shuffle=True)
+  File "/home-mscluster/erex/anaconda3/envs/swav/lib/python3.9/site-packages/torch/utils/data/distributed.py", line 67, in __init__
+    num_replicas = dist.get_world_size()
+  File "/home-mscluster/erex/anaconda3/envs/swav/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 867, in get_world_size
+    return _get_group_size(group)
+  File "/home-mscluster/erex/anaconda3/envs/swav/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 325, in _get_group_size
+    default_pg = _get_default_group()
+  File "/home-mscluster/erex/anaconda3/envs/swav/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 429, in _get_default_group
+    raise RuntimeError(
+RuntimeError: Default process group has not been initialized, please make sure to call init_process_group.
