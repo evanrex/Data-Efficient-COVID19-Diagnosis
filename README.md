@@ -14,3 +14,7 @@ set of fewer than 100 000 CT images yields a statistically significant improveme
 using a model with pre-trained ImageNet weights. The Area Under the Receiver Op-
 erating Characteristic (ROC) Curve (AUC) is used to quantify this performance, while
 Permutation Testing is used to show that the increase is statistically significant.
+
+# Reproducibility
+
+We use slurm to run our exoeriments, see this [sbatch file](https://github.com/evanrex/Data-Efficient-COVID19-Diagnosis/blob/main/models/dino/pretrain_dino.sbatch) for reference.
