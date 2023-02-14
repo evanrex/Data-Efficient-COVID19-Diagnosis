@@ -1,0 +1,156 @@
+Tue Oct 25 03:28:15 SAST 2022
+Hello world!
+Start
+============ Initializing Model ... ============
+/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home-mscluster/erex/anaconda3/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+============ preparing data ... ============
+Data loaded: there are 91958 images.
+============ Starting training ... ============
+Epoch 0 Loss: 1.4003
+Epoch complete in 428m 58s
+================================================
+Epoch 1 Loss: 1.4221
+Epoch complete in 702m 7s
+================================================
+Epoch 2 Loss: 1.4108
+Epoch complete in 1028m 40s
+================================================
+Epoch 3 Loss: 1.4114
+Epoch complete in 1385m 37s
+================================================
+Epoch 4 Loss: 1.4130
+Epoch complete in 1725m 55s
+================================================
+Epoch 5 Loss: 1.4115
+Epoch complete in 2028m 38s
+================================================
+Epoch 6 Loss: 1.3935
+Epoch complete in 2289m 32s
+================================================
+Epoch 7 Loss: 1.4062
+Epoch complete in 2478m 51s
+================================================
+Epoch 8 Loss: 1.3975
+Epoch complete in 2605m 45s
+================================================
+Epoch 9 Loss: 1.3987
+Epoch complete in 2707m 33s
+================================================
+Epoch 10 Loss: 1.4055
+Epoch complete in 2814m 10s
+================================================
+Epoch 11 Loss: 1.3965
+Epoch complete in 2915m 30s
+================================================
+Epoch 12 Loss: 1.3967
+Epoch complete in 3003m 46s
+================================================
+Epoch 13 Loss: 1.3981
+Epoch complete in 3076m 31s
+================================================
+Epoch 14 Loss: 1.3888
+Epoch complete in 3137m 47s
+================================================
+Epoch 15 Loss: 1.3818
+Epoch complete in 3208m 59s
+================================================
+Epoch 16 Loss: 1.3957
+Epoch complete in 3270m 13s
+================================================
+Epoch 17 Loss: 1.3970
+Epoch complete in 3324m 28s
+================================================
+Epoch 18 Loss: 1.3895
+Epoch complete in 3382m 12s
+================================================
+Epoch 19 Loss: 1.3852
+Epoch complete in 3427m 16s
+================================================
+Epoch 20 Loss: 1.3890
+Epoch complete in 3466m 43s
+================================================
+Epoch 21 Loss: 1.3731
+Epoch complete in 3497m 54s
+================================================
+Epoch 22 Loss: 1.4002
+Epoch complete in 3534m 20s
+================================================
+Epoch 23 Loss: 1.3851
+Epoch complete in 3572m 26s
+================================================
+Epoch 24 Loss: 1.3823
+Epoch complete in 3622m 10s
+================================================
+Epoch 25 Loss: 1.3789
+Epoch complete in 3669m 27s
+================================================
+Epoch 26 Loss: 1.3760
+Epoch complete in 3724m 35s
+================================================
+Epoch 27 Loss: 1.3913
+Epoch complete in 3781m 0s
+================================================
+Epoch 28 Loss: 1.3793
+Epoch complete in 3840m 19s
+================================================
+Epoch 29 Loss: 1.3777
+Epoch complete in 3878m 41s
+================================================
+Epoch 30 Loss: 1.3823
+Epoch complete in 3915m 3s
+================================================
+Epoch 31 Loss: 1.3822
+Epoch complete in 3948m 39s
+================================================
+Epoch 32 Loss: 1.3825
+Epoch complete in 3973m 1s
+================================================
+Epoch 33 Loss: 1.3868
+Epoch complete in 3994m 49s
+================================================
+Epoch 34 Loss: 1.3777
+Epoch complete in 4016m 49s
+================================================
+Epoch 35 Loss: 1.3733
+Epoch complete in 4038m 37s
+================================================
+Epoch 36 Loss: 1.3723
+Epoch complete in 4059m 44s
+================================================
+Epoch 37 Loss: 1.3739
+Epoch complete in 4081m 10s
+================================================
+Epoch 38 Loss: 1.3768
+Epoch complete in 4103m 6s
+================================================
+Epoch 39 Loss: 1.3670
+Epoch complete in 4125m 18s
+================================================
+Epoch 40 Loss: 1.3612
+Epoch complete in 4147m 38s
+================================================
+Epoch 41 Loss: 1.3703
+Epoch complete in 4170m 7s
+================================================
+Epoch 42 Loss: 1.3795
+Epoch complete in 4193m 7s
+================================================
+Epoch 43 Loss: 1.3700
+Epoch complete in 4215m 16s
+================================================
+Epoch 44 Loss: 1.3760
+Epoch complete in 4237m 50s
+================================================
+Epoch 45 Loss: 1.3697
+Epoch complete in 4259m 56s
+================================================
+Epoch 46 Loss: 1.3798
+Epoch complete in 4281m 32s
+================================================
+Epoch 47 Loss: 1.3699
+Epoch complete in 4304m 7s
+================================================
+slurmstepd-mscluster20: error: *** JOB 214027 ON mscluster20 CANCELLED AT 2022-10-28T03:28:35 DUE TO TIME LIMIT ***
